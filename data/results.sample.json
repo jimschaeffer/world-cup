@@ -1,0 +1,22 @@
+{
+  "_README": "DEMO DATA ONLY — used to sanity-check scoring. Not loaded by the app. The live file is results.json.",
+  "lastUpdated": "2026-06-25 (DEMO)",
+  "groupResults": [
+    { "home": "ESP", "away": "CPV", "hs": 3, "as": 0 },
+    { "home": "KSA", "away": "URU", "hs": 0, "as": 2 },
+    { "home": "ESP", "away": "KSA", "hs": 2, "as": 0 },
+    { "home": "URU", "away": "CPV", "hs": 1, "as": 1 },
+    { "home": "ESP", "away": "URU", "hs": 1, "as": 1 },
+    { "home": "CPV", "away": "KSA", "hs": 0, "as": 1 }
+  ],
+  "advancedToR32": null,
+  "groupWinners": null,
+  "knockout": {
+    "R32": [ { "home": "ESP", "away": "MAR", "hs": 2, "as": 0, "winner": "ESP" } ],
+    "R16": [],
+    "QF": [],
+    "SF": [],
+    "third": null,
+    "final": null
+  }
+}

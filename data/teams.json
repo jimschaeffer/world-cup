@@ -1,0 +1,64 @@
+{
+  "_comment": "The 48 teams of the 2026 FIFA World Cup. cost = salary-cap price from the official Cost Menu. group = final draw group. iso = flag code (flagcdn.com). DO NOT edit codes once rosters reference them.",
+  "teams": [
+    { "code": "MEX", "name": "Mexico",                "group": "A", "cost": 8,  "iso": "mx" },
+    { "code": "RSA", "name": "South Africa",          "group": "A", "cost": 3,  "iso": "za" },
+    { "code": "KOR", "name": "South Korea",           "group": "A", "cost": 6,  "iso": "kr" },
+    { "code": "CZE", "name": "Czechia",               "group": "A", "cost": 6,  "iso": "cz" },
+
+    { "code": "CAN", "name": "Canada",                "group": "B", "cost": 7,  "iso": "ca" },
+    { "code": "BIH", "name": "Bosnia & Herzegovina",  "group": "B", "cost": 6,  "iso": "ba" },
+    { "code": "QAT", "name": "Qatar",                 "group": "B", "cost": 2,  "iso": "qa" },
+    { "code": "SUI", "name": "Switzerland",           "group": "B", "cost": 9,  "iso": "ch" },
+
+    { "code": "BRA", "name": "Brazil",                "group": "C", "cost": 17, "iso": "br" },
+    { "code": "MAR", "name": "Morocco",               "group": "C", "cost": 8,  "iso": "ma" },
+    { "code": "HAI", "name": "Haiti",                 "group": "C", "cost": 1,  "iso": "ht" },
+    { "code": "SCO", "name": "Scotland",              "group": "C", "cost": 5,  "iso": "gb-sct" },
+
+    { "code": "USA", "name": "United States",         "group": "D", "cost": 9,  "iso": "us" },
+    { "code": "PAR", "name": "Paraguay",              "group": "D", "cost": 5,  "iso": "py" },
+    { "code": "AUS", "name": "Australia",             "group": "D", "cost": 4,  "iso": "au" },
+    { "code": "TUR", "name": "Turkey",                "group": "D", "cost": 8,  "iso": "tr" },
+
+    { "code": "GER", "name": "Germany",               "group": "E", "cost": 14, "iso": "de" },
+    { "code": "CUW", "name": "Curaçao",               "group": "E", "cost": 1,  "iso": "cw" },
+    { "code": "CIV", "name": "Ivory Coast",           "group": "E", "cost": 6,  "iso": "ci" },
+    { "code": "ECU", "name": "Ecuador",               "group": "E", "cost": 7,  "iso": "ec" },
+
+    { "code": "NED", "name": "Netherlands",           "group": "F", "cost": 11, "iso": "nl" },
+    { "code": "JPN", "name": "Japan",                 "group": "F", "cost": 7,  "iso": "jp" },
+    { "code": "SWE", "name": "Sweden",                "group": "F", "cost": 6,  "iso": "se" },
+    { "code": "TUN", "name": "Tunisia",               "group": "F", "cost": 3,  "iso": "tn" },
+
+    { "code": "BEL", "name": "Belgium",               "group": "G", "cost": 11, "iso": "be" },
+    { "code": "EGY", "name": "Egypt",                 "group": "G", "cost": 6,  "iso": "eg" },
+    { "code": "IRN", "name": "Iran",                  "group": "G", "cost": 4,  "iso": "ir" },
+    { "code": "NZL", "name": "New Zealand",           "group": "G", "cost": 2,  "iso": "nz" },
+
+    { "code": "ESP", "name": "Spain",                 "group": "H", "cost": 20, "iso": "es" },
+    { "code": "CPV", "name": "Cape Verde",            "group": "H", "cost": 2,  "iso": "cv" },
+    { "code": "KSA", "name": "Saudi Arabia",          "group": "H", "cost": 3,  "iso": "sa" },
+    { "code": "URU", "name": "Uruguay",               "group": "H", "cost": 9,  "iso": "uy" },
+
+    { "code": "FRA", "name": "France",                "group": "I", "cost": 18, "iso": "fr" },
+    { "code": "SEN", "name": "Senegal",               "group": "I", "cost": 6,  "iso": "sn" },
+    { "code": "IRQ", "name": "Iraq",                  "group": "I", "cost": 2,  "iso": "iq" },
+    { "code": "NOR", "name": "Norway",                "group": "I", "cost": 9,  "iso": "no" },
+
+    { "code": "ARG", "name": "Argentina",             "group": "J", "cost": 16, "iso": "ar" },
+    { "code": "ALG", "name": "Algeria",               "group": "J", "cost": 5,  "iso": "dz" },
+    { "code": "AUT", "name": "Austria",               "group": "J", "cost": 6,  "iso": "at" },
+    { "code": "JOR", "name": "Jordan",                "group": "J", "cost": 2,  "iso": "jo" },
+
+    { "code": "POR", "name": "Portugal",              "group": "K", "cost": 15, "iso": "pt" },
+    { "code": "COD", "name": "DR Congo",              "group": "K", "cost": 4,  "iso": "cd" },
+    { "code": "UZB", "name": "Uzbekistan",            "group": "K", "cost": 2,  "iso": "uz" },
+    { "code": "COL", "name": "Colombia",              "group": "K", "cost": 9,  "iso": "co" },
+
+    { "code": "ENG", "name": "England",               "group": "L", "cost": 18, "iso": "gb-eng" },
+    { "code": "CRO", "name": "Croatia",               "group": "L", "cost": 7,  "iso": "hr" },
+    { "code": "GHA", "name": "Ghana",                 "group": "L", "cost": 4,  "iso": "gh" },
+    { "code": "PAN", "name": "Panama",                "group": "L", "cost": 2,  "iso": "pa" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "_README": "SAMPLE rosters for 7 participants. Replace the team picks with each person's real entry when ready. Each entry: name + exactly 7 team codes (from teams.json). The site shows each roster's total spend and flags anything that breaks the rules (not 7 teams, or over the 60-point cap). Order of teams does not matter.",
+  "budgetCap": 60,
+  "rosterSize": 7,
+  "rosters": [
+    { "name": "Jim",       "teams": ["ESP", "NED", "URU", "MAR", "CRO", "RSA", "QAT"] },
+    { "name": "Lee",       "teams": ["ENG", "BRA", "SUI", "EGY", "SCO", "AUS", "CUW"] },
+    { "name": "Davidson",  "teams": ["FRA", "ARG", "JPN", "SEN", "ALG", "GHA", "IRN"] },
+    { "name": "Blackerby", "teams": ["POR", "GER", "BEL", "COL", "MEX", "CPV", "HAI"] },
+    { "name": "Gavin",     "teams": ["GER", "NED", "USA", "TUR", "CRO", "CZE", "ALG"] },
+    { "name": "Gardner",   "teams": ["ENG", "POR", "NOR", "SWE", "KOR", "TUN", "PAN"] },
+    { "name": "Vince",     "teams": ["ARG", "BEL", "URU", "JPN", "EGY", "PAR", "GHA"] }
+  ]
+}

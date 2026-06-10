@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup 2026 Draft Pool</title>
+  <meta name="description" content="Salary-cap World Cup 2026 draft pool — live standings and scoring." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img class="emblem-img" src="assets/logo-white.png" alt="2026 FIFA World Cup"
+             onerror="this.style.display='none';document.getElementById('emblem-fallback').style.display='grid';" />
+        <span class="emblem" id="emblem-fallback" aria-hidden="true" style="display:none"><b>26</b></span>
+        <div class="brand-text">
+          <h1>World Cup 2026 <span>Draft Pool</span></h1>
+          <p class="tagline">Salary-Cap Edition · build 7, bank points, win the pool</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span id="updated" class="pill">—</span>
+        <span id="phase" class="pill pill-accent">—</span>
+      </div>
+    </div>
+    <nav class="tabs wrap" role="tablist">
+      <button class="tab is-active" data-tab="leaderboard" role="tab">Leaderboard</button>
+      <button class="tab" data-tab="schedule" role="tab">Schedule</button>
+      <button class="tab" data-tab="teams" role="tab"><span class="t-full">Teams &amp; Groups</span><span class="t-short">Teams</span></button>
+      <button class="tab" data-tab="rules" role="tab"><span class="t-full">Rules &amp; Cost Menu</span><span class="t-short">Rules</span></button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="tab-leaderboard" class="tab-panel is-active">
+      <div id="champion-banner"></div>
+      <div id="leaderboard"></div>
+    </section>
+
+    <section id="tab-schedule" class="tab-panel">
+      <div id="schedule"></div>
+    </section>
+
+    <section id="tab-teams" class="tab-panel">
+      <div id="teams"></div>
+    </section>
+
+    <section id="tab-rules" class="tab-panel">
+      <div id="rules"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Unofficial fan pool. Not affiliated with or endorsed by FIFA. Team data from the 2026 FIFA World Cup final draw.</p>
+  </footer>
+
+  <script src="scoring.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
