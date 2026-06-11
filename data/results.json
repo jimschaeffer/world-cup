@@ -3,8 +3,7 @@
   "lastUpdated": "2026-06-10",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
-  "groupResults": [
-  ],
+  "groupResults": [{ "home": "MEX", "away": "RSA", "hs": 2, "as": 0 }],
 
   "_overrides_help": "Leave these null in normal cases — the engine computes them. Only fill them to settle a tie decided by drawing of lots or fair-play points. advancedToR32 = array of exactly 32 codes. groupWinners = array of 12 codes (one per group).",
   "advancedToR32": null,
@@ -12,10 +11,10 @@
 
   "_knockout_help": "Fill each round as it happens. For every match give home, away, hs, as, and winner (the code that advanced — if decided on penalties, just put the team that went through as the winner). Goals here also count toward the goals tiebreaker.",
   "knockout": {
-    "R32":   [],
-    "R16":   [],
-    "QF":    [],
-    "SF":    [],
+    "R32": [],
+    "R16": [],
+    "QF": [],
+    "SF": [],
     "third": null,
     "final": null
   }
