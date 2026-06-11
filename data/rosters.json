@@ -3,12 +3,37 @@
   "budgetCap": 60,
   "rosterSize": 7,
   "rosters": [
-    { "name": "Jim",       "teams": ["ESP", "NED", "URU", "MAR", "CRO", "RSA", "QAT"] },
-    { "name": "Lee",       "teams": ["ENG", "BRA", "SUI", "EGY", "SCO", "AUS", "CUW"] },
-    { "name": "Davidson",  "teams": ["FRA", "ARG", "JPN", "SEN", "ALG", "GHA", "IRN"] },
-    { "name": "Blackerby", "teams": ["POR", "GER", "BEL", "COL", "MEX", "CPV", "HAI"] },
-    { "name": "Gavin",     "teams": ["GER", "NED", "USA", "TUR", "CRO", "CZE", "ALG"] },
-    { "name": "Gardner",   "teams": ["ENG", "POR", "NOR", "SWE", "KOR", "TUN", "PAN"] },
-    { "name": "Vince",     "teams": ["ARG", "BEL", "URU", "JPN", "EGY", "PAR", "GHA"] }
+    {
+      "name": "Jim",
+      "teams": ["ESP", "FRA", "POR", "NZL", "PAN", "JOR", "HAI"]
+    },
+    {
+      "name": "Lee",
+      "teams": ["ESP", "POR", "SUI", "IRN", "PAN", "CAN", "TUN"]
+    },
+    {
+      "name": "Davidson",
+      "teams": ["FRA", "ENG", "ARG", "UZB", "NZL", "JOR", "CPV"]
+    },
+    {
+      "name": "Blackerby",
+      "teams": ["BRA", "POR", "COL", "MEX", "SWE", "IRN", "HAI"]
+    },
+    {
+      "name": "Gavin",
+      "teams": ["GER", "NED", "COL", "SUI", "MAR", "JPN", "NZL"]
+    },
+    {
+      "name": "Gardner",
+      "teams": ["ARG", "GER", "COL", "MAR", "JPN", "AUS", "NZL"]
+    },
+    {
+      "name": "Vince",
+      "teams": ["FRA", "COL", "USA", "SWE", "MEX", "AUT", "GHA"]
+    },
+    {
+      "name": "Kyle",
+      "teams": ["ESP", "FRA", "POR", "KSA", "IRQ", "CUW", "HAI"]
+    }
   ]
 }
