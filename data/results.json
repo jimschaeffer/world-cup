@@ -11,7 +11,9 @@
     { "home": "QAT", "away": "SUI", "hs": 1, "as": 1 },
     { "home": "BRA", "away": "MAR", "hs": 1, "as": 1 },
     { "home": "HAI", "away": "SCO", "hs": 0, "as": 1 },
-    { "home": "AUS", "away": "TUR", "hs": 2, "as": 0 }
+    { "home": "AUS", "away": "TUR", "hs": 2, "as": 0 },
+    { "home": "GER", "away": "CUW", "hs": 7, "as": 1 },
+    { "home": "NED", "away": "JPN", "hs": 2, "as": 2 }
   ],
 
   "_overrides_help": "Leave these null in normal cases — the engine computes them. Only fill them to settle a tie decided by drawing of lots or fair-play points. advancedToR32 = array of exactly 32 codes. groupWinners = array of 12 codes (one per group).",
