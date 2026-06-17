@@ -1,0 +1,53 @@
+name: Update results
+
+# Pulls live 2026 World Cup scores from API-Football and commits data/results.json
+# when anything changed. Netlify redeploys automatically on the push.
+#
+# Cadence: every 20 minutes => ~72 API calls/day, safely under the free tier's
+# 100/day cap (one request per run). Bump the cron if you want it fresher during
+# live matches, but keep total daily runs under your plan's limit.
+#
+# Setup (one time): repo Settings > Secrets and variables > Actions > New
+# repository secret named APISPORTS_KEY with your api-sports.io key.
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {} # lets you run it on demand from the Actions tab
+
+# Avoid overlapping runs (a slow run + the next scheduled tick).
+concurrency:
+  group: update-results
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch results from API-Football
+        env:
+          APISPORTS_KEY: ${{ secrets.APISPORTS_KEY }}
+          WC_LEAGUE_ID: "1"
+          WC_SEASON: "2026"
+        run: node scripts/update-results.js
+
+      - name: Commit & push if results changed
+        run: |
+          if git diff --quiet -- data/results.json; then
+            echo "No change in results.json — nothing to commit."
+            exit 0
+          fi
+          git config user.name "wc-results-bot"
+          git config user.email "actions@github.com"
+          git add data/results.json
+          git commit -m "results: auto-update from API-Football"
+          git push
