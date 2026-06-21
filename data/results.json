@@ -1,6 +1,6 @@
 {
   "_README": "THIS IS THE ONLY FILE YOU EDIT DURING THE TOURNAMENT. After editing, save and redeploy (or just refresh if running locally). Use the 3-letter team codes from teams.json (e.g. ESP, BRA, USA). See README.md for the full guide. A worked example with sample scores lives in results.sample.json.",
-  "lastUpdated": "2026-06-20",
+  "lastUpdated": "2026-06-22",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
   "groupResults": [
