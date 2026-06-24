@@ -1,6 +1,6 @@
 {
   "_README": "THIS IS THE ONLY FILE YOU EDIT DURING THE TOURNAMENT. After editing, save and redeploy (or just refresh if running locally). Use the 3-letter team codes from teams.json (e.g. ESP, BRA, USA). See README.md for the full guide. A worked example with sample scores lives in results.sample.json.",
-  "lastUpdated": "2026-06-22",
+  "lastUpdated": "2026-06-24",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
   "groupResults": [
@@ -47,7 +47,11 @@
     { "home": "ARG", "away": "AUT", "hs": 2, "as": 0 },
     { "home": "FRA", "away": "IRQ", "hs": 3, "as": 0 },
     { "home": "NOR", "away": "SEN", "hs": 3, "as": 2 },
-    { "home": "JOR", "away": "ALG", "hs": 1, "as": 2 }
+    { "home": "JOR", "away": "ALG", "hs": 1, "as": 2 },
+    { "home": "POR", "away": "UZB", "hs": 5, "as": 0 },
+    { "home": "ENG", "away": "GHA", "hs": 0, "as": 0 },
+    { "home": "PAN", "away": "CRO", "hs": 0, "as": 1 },
+    { "home": "COL", "away": "COD", "hs": 1, "as": 0 }
   ],
 
   "_overrides_help": "Leave these null in normal cases — the engine computes them. Only fill them to settle a tie decided by drawing of lots or fair-play points. advancedToR32 = array of exactly 32 codes. groupWinners = array of 12 codes (one per group).",
