@@ -211,13 +211,40 @@ function renderSchedule() {
 
   const today = todayISO();
 
-  // ---- Next up: soonest unplayed fixtures ----
-  const upcoming = fix.filter((f) => !f.played).sort((a, b) => a.when.localeCompare(b.when)).slice(0, 6);
-  const nextCards = upcoming.map((f) => `
+  // Knockout fixtures with teams + a date set but not yet played — eligible for "Next up".
+  const koLabels = {};
+  (fixtures.knockoutWindows || []).forEach((w) => (koLabels[w.round] = w.label));
+  const koData = results.knockout || {};
+  const koUpcoming = [];
+  ["R32", "R16", "QF", "SF", "third", "final"].forEach((round) => {
+    const arr = round === "third" || round === "final"
+      ? (koData[round] ? [koData[round]] : [])
+      : (koData[round] || []);
+    arr.forEach((m) => {
+      if (!m || !m.home || !m.away || !m.date) return;
+      if (typeof m.hs === "number" && typeof m.as === "number") return; // already played
+      koUpcoming.push({
+        ko: true, roundLabel: koLabels[round] || round,
+        home: m.home, away: m.away, city: m.city, date: m.date, et: m.et,
+        when: `${m.date}T${m.t || String(m.match || 0).padStart(3, "0")}`,
+      });
+    });
+  });
+
+  // ---- Next up: soonest unplayed fixtures (group stage + knockouts) ----
+  const upcoming = [...fix.filter((f) => !f.played), ...koUpcoming]
+    .sort((a, b) => a.when.localeCompare(b.when)).slice(0, 6);
+  const nextCards = upcoming.map((f) => {
+    const badge = f.ko
+      ? `<span class="grp-badge ko">${esc(f.roundLabel)}</span>`
+      : `<span class="grp-badge">Grp ${f.group} · MD${f.md}</span>`;
+    const whenText = f.date === today ? "<b class='today-tag'>TODAY</b>" : fmtDate(f.date);
+    const timePart = f.et ? ` · ${esc(f.et)} CT` : "";
+    return `
     <div class="match-card${f.date === today ? " is-today" : ""}">
       <div class="mc-top">
-        <span class="grp-badge">Grp ${f.group} · MD${f.md}</span>
-        <span class="mc-when">${f.date === today ? "<b class='today-tag'>TODAY</b> · " : fmtDate(f.date) + " · "}${esc(f.et)} CT</span>
+        ${badge}
+        <span class="mc-when">${whenText}${timePart}</span>
       </div>
       <div class="mc-teams">
         <span class="mc-team">${flag(T(f.home))}<span>${esc(T(f.home).name)}</span></span>
@@ -225,11 +252,12 @@ function renderSchedule() {
         <span class="mc-team right"><span>${esc(T(f.away).name)}</span>${flag(T(f.away))}</span>
       </div>
       <div class="mc-city">📍 ${esc(f.city)}</div>
-    </div>`).join("");
+    </div>`;
+  }).join("");
 
   const nextSection = upcoming.length
     ? `<div class="next-grid">${nextCards}</div>`
-    : `<div class="card empty"><div class="big">🏁</div><p>All group matches are in. Check the knockout bracket below.</p></div>`;
+    : `<div class="card empty"><div class="big">🏁</div><p>No upcoming matches scheduled right now.</p></div>`;
 
   // ---- Full schedule grouped by date ----
   const byDate = {};
@@ -263,16 +291,32 @@ function renderSchedule() {
     } else {
       matches = ko[w.round] || [];
     }
-    const played = matches.filter((m) => m && typeof m.hs === "number");
-    const inner = played.length
-      ? played.map((m) => {
-          const hw = m.winner === m.home ? " winner" : "";
-          const aw = m.winner === m.away ? " winner" : "";
-          return `<div class="match-row done">
-            <span class="mr-grp ko">${w.round === "third" ? "3rd" : w.round === "final" ? "🏆" : w.round}</span>
-            <span class="mr-side home${hw}">${esc(T(m.home).name)}${flag(T(m.home))}</span>
-            <span class="mr-score">${m.hs}<span class="dash">–</span>${m.as}</span>
-            <span class="mr-side away${aw}">${flag(T(m.away))}${esc(T(m.away).name)}</span>
+    // Show any match with both teams set — played (score + winner) or upcoming (date + city).
+    const set = matches.filter((m) => m && m.home && m.away);
+    const tag = w.round === "third" ? "3rd" : w.round === "final" ? "🏆" : w.round;
+    const inner = set.length
+      ? set.map((m) => {
+          const isPlayed = typeof m.hs === "number" && typeof m.as === "number";
+          if (isPlayed) {
+            const hw = m.winner === m.home ? " winner" : "";
+            const aw = m.winner === m.away ? " winner" : "";
+            return `<div class="match-row done">
+              <span class="mr-grp ko">${tag}</span>
+              <span class="mr-side home${hw}">${esc(T(m.home).name)}${flag(T(m.home))}</span>
+              <span class="mr-score">${m.hs}<span class="dash">–</span>${m.as}</span>
+              <span class="mr-side away${aw}">${flag(T(m.away))}${esc(T(m.away).name)}</span>
+              ${m.city ? `<span class="mr-city">${esc(m.city)}</span>` : ""}
+            </div>`;
+          }
+          const when = m.date
+            ? (m.date === today ? `<b class="today-tag">TODAY</b>` : fmtDate(m.date))
+            : "TBD";
+          return `<div class="match-row${m.date === today ? " is-today" : ""}">
+            <span class="mr-grp ko">${tag}</span>
+            <span class="mr-side home">${esc(T(m.home).name)}${flag(T(m.home))}</span>
+            <span class="mr-time">${when}</span>
+            <span class="mr-side away">${flag(T(m.away))}${esc(T(m.away).name)}</span>
+            ${m.city ? `<span class="mr-city">${esc(m.city)}</span>` : ""}
           </div>`;
         }).join("")
       : `<div class="ko-empty">Matchups set after the previous round.</div>`;

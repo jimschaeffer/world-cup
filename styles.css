@@ -268,6 +268,7 @@ table.std .pool { font-family: var(--display); font-weight: 800; }
   font-family: var(--display); font-weight: 700; font-size: 0.66rem; color: var(--muted);
   border: 1px solid var(--border); border-radius: 999px; padding: 0.12rem 0.5rem;
 }
+.grp-badge.ko { color: var(--purple); border-color: var(--purple); }
 .mc-when { font-size: 0.72rem; color: var(--muted); }
 .today-tag {
   background: var(--grad); color: #fff; font-family: var(--display); font-weight: 800;
