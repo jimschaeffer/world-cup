@@ -84,7 +84,24 @@
 
   "_knockout_help": "Fill each round as it happens. For every match give home, away, hs, as, and winner (the code that advanced — if decided on penalties, just put the team that went through as the winner). Goals here also count toward the goals tiebreaker.",
   "knockout": {
-    "R32": [],
+    "R32": [
+      { "home": "CAN", "away": "RSA", "hs": null, "as": null, "winner": null },
+      { "home": "BRA", "away": "JPN", "hs": null, "as": null, "winner": null },
+      { "home": "GER", "away": "PAR", "hs": null, "as": null, "winner": null },
+      { "home": "NED", "away": "MAR", "hs": null, "as": null, "winner": null },
+      { "home": "CIV", "away": "NOR", "hs": null, "as": null, "winner": null },
+      { "home": "FRA", "away": "SWE", "hs": null, "as": null, "winner": null },
+      { "home": "MEX", "away": "ECU", "hs": null, "as": null, "winner": null },
+      { "home": "ENG", "away": "COD", "hs": null, "as": null, "winner": null },
+      { "home": "BEL", "away": "SEN", "hs": null, "as": null, "winner": null },
+      { "home": "USA", "away": "BIH", "hs": null, "as": null, "winner": null },
+      { "home": "ESP", "away": "AUT", "hs": null, "as": null, "winner": null },
+      { "home": "POR", "away": "CRO", "hs": null, "as": null, "winner": null },
+      { "home": "SUI", "away": "ALG", "hs": null, "as": null, "winner": null },
+      { "home": "EGY", "away": "AUS", "hs": null, "as": null, "winner": null },
+      { "home": "ARG", "away": "CPV", "hs": null, "as": null, "winner": null },
+      { "home": "COL", "away": "GHA", "hs": null, "as": null, "winner": null }
+    ],
     "R16": [],
     "QF": [],
     "SF": [],
