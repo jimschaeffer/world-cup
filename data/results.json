@@ -153,9 +153,9 @@
         "city": "Dallas",
         "home": "CIV",
         "away": "NOR",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 1,
+        "as": 2,
+        "winner": "NOR"
       },
       {
         "match": 79,
