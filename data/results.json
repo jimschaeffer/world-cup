@@ -129,9 +129,9 @@
         "city": "Houston",
         "home": "BRA",
         "away": "JPN",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 2,
+        "as": 1,
+        "winner": "BRA"
       },
       {
         "match": 77,
