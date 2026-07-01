@@ -141,9 +141,9 @@
         "city": "New York/New Jersey",
         "home": "FRA",
         "away": "SWE",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 3,
+        "as": 0,
+        "winner": "FRA"
       },
       {
         "match": 78,
@@ -177,9 +177,9 @@
         "city": "Atlanta",
         "home": "ENG",
         "away": "COD",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 2,
+        "as": 1,
+        "winner": "ENG"
       },
       {
         "match": 81,
