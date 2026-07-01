@@ -165,9 +165,9 @@
         "city": "Mexico City",
         "home": "MEX",
         "away": "ECU",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 2,
+        "as": 0,
+        "winner": "MEX"
       },
       {
         "match": 80,
