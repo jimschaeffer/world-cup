@@ -213,9 +213,9 @@
         "city": "Toronto",
         "home": "POR",
         "away": "CRO",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 2,
+        "as": 1,
+        "winner": "POR"
       },
       {
         "match": 84,
@@ -225,9 +225,9 @@
         "city": "Los Angeles",
         "home": "ESP",
         "away": "AUT",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 3,
+        "as": 0,
+        "winner": "ESP"
       },
       {
         "match": 85,
@@ -237,9 +237,9 @@
         "city": "Vancouver",
         "home": "SUI",
         "away": "ALG",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 2,
+        "as": 0,
+        "winner": "SUI"
       },
       {
         "match": 86,
