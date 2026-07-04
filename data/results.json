@@ -1,6 +1,6 @@
 {
   "_README": "THIS IS THE ONLY FILE YOU EDIT DURING THE TOURNAMENT. After editing, save and redeploy (or just refresh if running locally). Use the 3-letter team codes from teams.json (e.g. ESP, BRA, USA). See README.md for the full guide. A worked example with sample scores lives in results.sample.json.",
-  "lastUpdated": "2026-07-02",
+  "lastUpdated": "2026-07-04",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
   "groupResults": [
@@ -249,9 +249,9 @@
         "city": "Miami",
         "home": "ARG",
         "away": "CPV",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 3,
+        "as": 2,
+        "winner": "ARG"
       },
       {
         "match": 87,
@@ -261,9 +261,9 @@
         "city": "Kansas City",
         "home": "COL",
         "away": "GHA",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 1,
+        "as": 0,
+        "winner": "COL"
       },
       {
         "match": 88,
@@ -273,12 +273,85 @@
         "city": "Dallas",
         "home": "AUS",
         "away": "EGY",
-        "hs": null,
-        "as": null,
-        "winner": null
+        "hs": 1,
+        "as": 1,
+        "winner": "EGY"
       }
     ],
-    "R16": [],
+    "R16": [
+      {
+        "match": 89,
+        "date": "2026-07-04",
+        "t": "17:00",
+        "et": "5:00 PM",
+        "city": "Philadelphia",
+        "home": "PAR",
+        "away": "FRA"
+      },
+      {
+        "match": 90,
+        "date": "2026-07-04",
+        "t": "13:00",
+        "et": "1:00 PM",
+        "city": "Houston",
+        "home": "CAN",
+        "away": "MAR"
+      },
+      {
+        "match": 91,
+        "date": "2026-07-05",
+        "t": "16:00",
+        "et": "4:00 PM",
+        "city": "New York/New Jersey",
+        "home": "BRA",
+        "away": "NOR"
+      },
+      {
+        "match": 92,
+        "date": "2026-07-05",
+        "t": "20:00",
+        "et": "8:00 PM",
+        "city": "Mexico City",
+        "home": "MEX",
+        "away": "ENG"
+      },
+      {
+        "match": 93,
+        "date": "2026-07-06",
+        "t": "15:00",
+        "et": "3:00 PM",
+        "city": "Dallas",
+        "home": "POR",
+        "away": "ESP"
+      },
+      {
+        "match": 94,
+        "date": "2026-07-06",
+        "t": "20:00",
+        "et": "8:00 PM",
+        "city": "Seattle",
+        "home": "USA",
+        "away": "BEL"
+      },
+      {
+        "match": 95,
+        "date": "2026-07-07",
+        "t": "12:00",
+        "et": "12:00 PM",
+        "city": "Atlanta",
+        "home": "ARG",
+        "away": "EGY"
+      },
+      {
+        "match": 96,
+        "date": "2026-07-07",
+        "t": "16:00",
+        "et": "4:00 PM",
+        "city": "Vancouver",
+        "home": "SUI",
+        "away": "COL"
+      }
+    ],
     "QF": [],
     "SF": [],
     "third": null,
