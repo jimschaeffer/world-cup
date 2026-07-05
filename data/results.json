@@ -286,7 +286,10 @@
         "et": "5:00 PM",
         "city": "Philadelphia",
         "home": "PAR",
-        "away": "FRA"
+        "away": "FRA",
+        "hs": 0,
+        "as": 1,
+        "winner": "FRA"
       },
       {
         "match": 90,
@@ -295,7 +298,10 @@
         "et": "1:00 PM",
         "city": "Houston",
         "home": "CAN",
-        "away": "MAR"
+        "away": "MAR",
+        "hs": 0,
+        "as": 3,
+        "winner": "MAR"
       },
       {
         "match": 91,
