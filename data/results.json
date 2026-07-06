@@ -310,7 +310,10 @@
         "et": "4:00 PM",
         "city": "New York/New Jersey",
         "home": "BRA",
-        "away": "NOR"
+        "away": "NOR",
+        "hs": 1,
+        "as": 2,
+        "winner": "NOR"
       },
       {
         "match": 92,
@@ -319,7 +322,10 @@
         "et": "8:00 PM",
         "city": "Mexico City",
         "home": "MEX",
-        "away": "ENG"
+        "away": "ENG",
+        "hs": 2,
+        "as": 3,
+        "winner": "ENG"
       },
       {
         "match": 93,
