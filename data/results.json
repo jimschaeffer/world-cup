@@ -358,7 +358,10 @@
         "et": "12:00 PM",
         "city": "Atlanta",
         "home": "ARG",
-        "away": "EGY"
+        "away": "EGY",
+        "hs": 3,
+        "as": 2,
+        "winner": "ARG"
       },
       {
         "match": 96,
