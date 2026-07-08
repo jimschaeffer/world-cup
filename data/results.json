@@ -370,7 +370,10 @@
         "et": "4:00 PM",
         "city": "Vancouver",
         "home": "SUI",
-        "away": "COL"
+        "away": "COL",
+        "hs": 0,
+        "as": 0,
+        "winner": "SUI"
       }
     ],
     "QF": [],
