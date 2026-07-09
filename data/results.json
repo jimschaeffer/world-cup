@@ -384,7 +384,10 @@
         "et": "4:00 PM",
         "city": "Boston",
         "home": "FRA",
-        "away": "MAR"
+        "away": "MAR",
+        "hs": 2,
+        "as": 0,
+        "winner": "FRA"
       },
       {
         "match": 98,
