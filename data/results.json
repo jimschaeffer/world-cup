@@ -1,6 +1,6 @@
 {
   "_README": "THIS IS THE ONLY FILE YOU EDIT DURING THE TOURNAMENT. After editing, save and redeploy (or just refresh if running locally). Use the 3-letter team codes from teams.json (e.g. ESP, BRA, USA). See README.md for the full guide. A worked example with sample scores lives in results.sample.json.",
-  "lastUpdated": "2026-07-05",
+  "lastUpdated": "2026-07-09",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
   "groupResults": [
@@ -376,7 +376,44 @@
         "winner": "SUI"
       }
     ],
-    "QF": [],
+    "QF": [
+      {
+        "match": 97,
+        "date": "2026-07-09",
+        "t": "16:00",
+        "et": "4:00 PM",
+        "city": "Boston",
+        "home": "FRA",
+        "away": "MAR"
+      },
+      {
+        "match": 98,
+        "date": "2026-07-10",
+        "t": "15:00",
+        "et": "3:00 PM",
+        "city": "Los Angeles",
+        "home": "ESP",
+        "away": "BEL"
+      },
+      {
+        "match": 99,
+        "date": "2026-07-11",
+        "t": "17:00",
+        "et": "5:00 PM",
+        "city": "Miami",
+        "home": "NOR",
+        "away": "ENG"
+      },
+      {
+        "match": 100,
+        "date": "2026-07-11",
+        "t": "21:00",
+        "et": "9:00 PM",
+        "city": "Kansas City",
+        "home": "ARG",
+        "away": "SUI"
+      }
+    ],
     "SF": [],
     "third": null,
     "final": null
