@@ -396,7 +396,10 @@
         "et": "3:00 PM",
         "city": "Los Angeles",
         "home": "ESP",
-        "away": "BEL"
+        "away": "BEL",
+        "hs": 2,
+        "as": 1,
+        "winner": "ESP"
       },
       {
         "match": 99,
