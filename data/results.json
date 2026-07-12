@@ -420,7 +420,10 @@
         "et": "9:00 PM",
         "city": "Kansas City",
         "home": "ARG",
-        "away": "SUI"
+        "away": "SUI",
+        "hs": 3,
+        "as": 1,
+        "winner": "ARG"
       }
     ],
     "SF": [],
