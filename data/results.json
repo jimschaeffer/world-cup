@@ -408,7 +408,10 @@
         "et": "5:00 PM",
         "city": "Miami",
         "home": "NOR",
-        "away": "ENG"
+        "away": "ENG",
+        "hs": 1,
+        "as": 2,
+        "winner": "ENG"
       },
       {
         "match": 100,
