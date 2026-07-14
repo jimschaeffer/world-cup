@@ -434,7 +434,10 @@
         "et": "3:00 PM",
         "city": "Dallas",
         "home": "FRA",
-        "away": "ESP"
+        "away": "ESP",
+        "hs": 0,
+        "as": 2,
+        "winner": "ESP"
       },
       {
         "match": 102,
