@@ -446,7 +446,10 @@
         "et": "3:00 PM",
         "city": "Atlanta",
         "home": "ENG",
-        "away": "ARG"
+        "away": "ARG",
+        "hs": 1,
+        "as": 2,
+        "winner": "ARG"
       }
     ],
     "third": null,
