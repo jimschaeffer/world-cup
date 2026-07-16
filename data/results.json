@@ -1,6 +1,6 @@
 {
   "_README": "THIS IS THE ONLY FILE YOU EDIT DURING THE TOURNAMENT. After editing, save and redeploy (or just refresh if running locally). Use the 3-letter team codes from teams.json (e.g. ESP, BRA, USA). See README.md for the full guide. A worked example with sample scores lives in results.sample.json.",
-  "lastUpdated": "2026-07-12",
+  "lastUpdated": "2026-07-16",
 
   "_groupResults_help": "Add one line per finished GROUP-STAGE match. home/away = team codes, hs/as = goals. Group, standings, group-winner bonus, and who advances are all computed automatically. Order does not matter.",
   "groupResults": [
@@ -452,7 +452,23 @@
         "winner": "ARG"
       }
     ],
-    "third": null,
-    "final": null
+    "third": {
+      "match": 103,
+      "date": "2026-07-18",
+      "t": "15:00",
+      "et": "3:00 PM",
+      "city": "Miami",
+      "home": "FRA",
+      "away": "ENG"
+    },
+    "final": {
+      "match": 104,
+      "date": "2026-07-19",
+      "t": "15:00",
+      "et": "3:00 PM",
+      "city": "New York/New Jersey",
+      "home": "ESP",
+      "away": "ARG"
+    }
   }
 }
