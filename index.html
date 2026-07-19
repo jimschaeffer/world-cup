@@ -66,7 +66,19 @@
     <p>Unofficial fan pool. Not affiliated with or endorsed by FIFA. Team data from the 2026 FIFA World Cup final draw.</p>
   </footer>
 
+  <div id="dehb-overlay" class="dehb-overlay" role="dialog" aria-modal="true"
+       aria-labelledby="dehb-title" hidden>
+    <canvas id="dehb-fireworks" class="dehb-fireworks" aria-hidden="true"></canvas>
+    <div class="dehb-card">
+      <div class="dehb-trophy" aria-hidden="true">🏆</div>
+      <h2 id="dehb-title" class="dehb-title">DEHB WINS!</h2>
+      <p class="dehb-sub">Davidson takes the 2026 World Cup Draft Pool</p>
+      <button type="button" class="dehb-close" id="dehb-close">Let’s go 🎉</button>
+    </div>
+  </div>
+
   <script src="scoring.js"></script>
   <script src="app.js"></script>
+  <script src="celebrate.js"></script>
 </body>
 </html>

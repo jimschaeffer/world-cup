@@ -371,3 +371,72 @@ table.std .pool { font-family: var(--display); font-weight: 800; }
   .lb-pts .n { font-size: 1.25rem; }
   .lb-row { grid-template-columns: 36px 1fr auto; gap: 0.5rem; padding: 0.75rem 0.8rem; }
 }
+
+/* ============================================================================
+   DEHB CHAMPION CELEBRATION — full-screen takeover + canvas fireworks
+   ========================================================================== */
+
+.dehb-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  display: grid; place-items: center;
+  background: radial-gradient(ellipse at center, rgba(16, 17, 46, 0.86) 0%, rgba(10, 10, 31, 0.97) 70%);
+  backdrop-filter: blur(6px);
+  animation: dehb-fade-in 0.45s ease both;
+}
+.dehb-overlay[hidden] { display: none; }
+.dehb-overlay.is-closing { animation: dehb-fade-out 0.4s ease both; }
+
+.dehb-fireworks { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.dehb-card {
+  position: relative;
+  text-align: center;
+  padding: 2.4rem 2.6rem 2.1rem;
+  max-width: min(92vw, 460px);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+  box-shadow: var(--shadow), 0 0 70px rgba(255, 45, 120, 0.28);
+  animation: dehb-pop 0.6s cubic-bezier(0.2, 1.4, 0.4, 1) 0.12s both;
+}
+
+.dehb-trophy { font-size: 3.4rem; line-height: 1; animation: dehb-bob 2.4s ease-in-out infinite; }
+
+.dehb-title {
+  margin: 0.5rem 0 0.3rem;
+  font-family: "FIFA 26", Archivo, system-ui, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 9vw, 3.4rem);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  background: var(--grad-warm);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 3px 18px rgba(255, 194, 61, 0.35));
+}
+
+.dehb-sub { margin: 0 0 1.5rem; color: var(--muted); font-size: 0.92rem; }
+
+.dehb-close {
+  font: inherit; font-weight: 700; font-size: 0.9rem;
+  color: #fff; cursor: pointer;
+  padding: 0.65rem 1.5rem;
+  border: 0; border-radius: 999px;
+  background: var(--grad);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.dehb-close:hover { transform: translateY(-1px); filter: brightness(1.1); }
+.dehb-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+@keyframes dehb-fade-in  { from { opacity: 0 } to { opacity: 1 } }
+@keyframes dehb-fade-out { from { opacity: 1 } to { opacity: 0; visibility: hidden } }
+@keyframes dehb-bob      { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-9px) } }
+@keyframes dehb-pop {
+  from { opacity: 0; transform: scale(0.82) translateY(14px) }
+  to   { opacity: 1; transform: scale(1) translateY(0) }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dehb-overlay, .dehb-card { animation: none }
+  .dehb-trophy { animation: none }
+}
