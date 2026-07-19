@@ -459,7 +459,10 @@
       "et": "3:00 PM",
       "city": "Miami",
       "home": "FRA",
-      "away": "ENG"
+      "away": "ENG",
+      "hs": 4,
+      "as": 6,
+      "winner": "ENG"
     },
     "final": {
       "match": 104,
